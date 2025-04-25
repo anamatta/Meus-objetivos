@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --platina: #d8e2dcff;
+--rosa-champagne: #ffe5d9ff;
+--rosa: #ffcad4ff;
+--cereja-rosa: #f4acb7ff;
+--mountbatten-pink: #9d8189ff;
+    --fonte-primaria: "Playfair Display", serif;
+    --fonte-segundaria: "Gravitas One", serif;
+}
+
+body{
+  background-color: var(--cereja-rosa);
+ color:var(--mountbatten-pink);
+font-family: var(--fonte-primaria);
+font-weight:400;
+font-style:#d8e2dcff
+}
+
+
+.conteudo-principal{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width:  1200px;;
+width: 100;
+margin: 0 auto;
+}
+
+.titulo-principal{
+font-family: var(--fonte-segundaria);
+text-align: left;
+width: 100%;
+font-size: 36px;
+}
+
+span{
+color: var(--platina)
+}
+
+.botao{
+    font-family: var(--fonte-primaria);
+    background-color: var(--mountbatten-pink);
+    color: var(--rosa-champagne);
+    display: flex;
+    justify-content: center;
+    padding: 1em ;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--cereja-rosa);
+    border-left: 4px solid var(--mountbatten-pink);
+    border-right: 4px solid var(--rosa);
+    border-top: none;
+}
+    .botoes{
+    display: block;
+    }
+
+    .botao:first-child{
+     border-radius: 0 0 40px 40px;
+    }
+
+   .ativo{
+    background-color: var(--mountbatten-pink);
+    border-bottom: var(--rosa-champagne);
+   }
+
+   @media screen and (min-width:768px){
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+    border-radius: 40px 0 0 0;
+    }
+      .botao:last-child{
+        border-radius: 0 40px 0 0;
+      }
+    
+    
+}
