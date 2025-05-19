@@ -2,12 +2,12 @@
 
 :root{
     --platina: #d8e2dcff;
---rosa-champagne: #ffe5d9ff;
---rosa: #ffcad4ff;
---cereja-rosa: #f4acb7ff;
---mountbatten-pink: #9d8189ff;
-    --fonte-primaria: "Playfair Display", serif;
-    --fonte-segundaria: "Gravitas One", serif;
+    --rosa-champagne: #ffe5d9ff;
+    --rosa: #ffcad4ff;
+    --cereja-rosa: #f4acb7ff;
+    --mountbatten-pink: #9d8189ff;
+    --fonte-primaria: var(--cereja-rosa);
+    --fonte-segundaria: var(--rosa-champagne);
 }
 
 body{
@@ -36,7 +36,7 @@ width: 100%;
 font-size: 36px;
 }
 
-span{
+ titulo-ptincipal spam {
 color: var(--platina)
 }
 
@@ -63,10 +63,29 @@ color: var(--platina)
      border-radius: 0 0 40px 40px;
     }
 
-   .ativo{
+    .botao:last-child{
+        border-radius: 0 0 40px 40px;
+    }
+
+   .botao.ativo{
     background-color: var(--mountbatten-pink);
-    border-bottom: var(--rosa-champagne);
+    border-bottom: 4px solid var(--cereja-rosa);
    }
+   .abas.texto{
+    background-color: var(--platina);
+    padding: 40px;
+    border-radius: 0 0 40px 40px ;
+   }
+    .aba.conteudo-principal{
+        font-size: 28px;
+        text-align: center;
+        color: var(--rosa-champagne);
+    }
+    .aba.conteudo.titulo-principal {
+      text-align: center;
+      color: var(--rosa);
+      text-transform: uppercase;
+    }
 
    @media screen and (min-width:768px){
     .botoes{
